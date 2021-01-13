@@ -23,7 +23,7 @@ const ProfileSchema = new mongoose.Schema({
         required: true
     },
     bio: {
-        type: String
+        type: String,
     },
     githubusername: {
         type: String
@@ -39,7 +39,7 @@ const ProfileSchema = new mongoose.Schema({
                 required: true
             },
             location: {
-                type: String,
+                type: String
             },
             from: {
                 type: Date,
@@ -53,7 +53,7 @@ const ProfileSchema = new mongoose.Schema({
                 default: false
             },
             description: {
-                type: String,
+                type: String
             }
         }
     ],
@@ -83,7 +83,7 @@ const ProfileSchema = new mongoose.Schema({
                 default: false
             },
             description: {
-                type: String,
+                type: String
             }
         }
     ],
@@ -102,7 +102,7 @@ const ProfileSchema = new mongoose.Schema({
         },
         instagram: {
             type: String
-        },
+        }
     },
     date: {
         type: Date,

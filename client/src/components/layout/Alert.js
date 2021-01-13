@@ -8,8 +8,9 @@ const Alert = ({ alerts }) => alerts !== null && alerts.length > 0 && alerts.map
     </div>
 ));
 
+
 Alert.propTypes = {
-    alerts: PropTypes.array.isRequired
+    alerts: PropTypes.array.isRequired,
 }
 
 const mapStateToProps = state => ({
@@ -17,4 +18,3 @@ const mapStateToProps = state => ({
 });
 
 export default connect(mapStateToProps)(Alert);
-
